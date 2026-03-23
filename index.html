@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RiverDream</title>
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,42 +16,51 @@
       color: #f4efe8;
       line-height: 1.6;
     }
+
     a {
       color: #ffd27a;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .hero {
       position: relative;
       min-height: 70vh;
-      background: linear-gradient(rgba(15,13,18,0.45), rgba(15,13,18,0.85)),
-                  url('studio1.png') center/cover no-repeat;
+      background:
+        linear-gradient(rgba(15, 13, 18, 0.45), rgba(15, 13, 18, 0.85)),
+        url('studio 1.png') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: 40px 20px;
     }
+
     .hero-content {
       max-width: 800px;
     }
+
     .hero h1 {
       font-size: 3rem;
       margin-bottom: 10px;
       color: #ffe3a3;
     }
+
     .hero p {
       font-size: 1.2rem;
       margin-bottom: 24px;
     }
+
     .button-row {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       justify-content: center;
     }
+
     .btn {
       display: inline-block;
       padding: 12px 18px;
@@ -57,26 +69,31 @@
       color: white;
       font-weight: bold;
     }
+
     .btn.secondary {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
     }
+
     .section {
       max-width: 1100px;
       margin: 0 auto;
       padding: 60px 20px;
     }
+
     .section h2 {
       font-size: 2rem;
       margin-bottom: 16px;
       color: #ffe3a3;
     }
+
     .socials {
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
       margin-top: 20px;
     }
+
     .socials a {
       background: #1b1720;
       padding: 12px 16px;
@@ -84,44 +101,52 @@
       border: 1px solid #2a2330;
       color: #f4efe8;
     }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
       margin-top: 24px;
     }
+
     .card {
       background: #18141c;
       border: 1px solid #2b2432;
       border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
+
     .card img {
       width: 100%;
       display: block;
       height: 280px;
       object-fit: cover;
     }
+
     .card-content {
       padding: 18px;
     }
+
     .card h3 {
       margin-top: 0;
       color: #ffe3a3;
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 16px;
       margin-top: 24px;
     }
+
     .gallery img {
       width: 100%;
       border-radius: 16px;
       display: block;
       border: 1px solid #2b2432;
     }
+
     footer {
       text-align: center;
       padding: 30px 20px 50px;
@@ -160,7 +185,7 @@
     <h2>Featured Music</h2>
     <div class="cards">
       <div class="card">
-        <img src="lofi-heaven.png" alt="Lofi Heaven cover">
+        <img src="lofi-heaven.PNG" alt="Lofi Heaven cover">
         <div class="card-content">
           <h3>Lofi Heaven</h3>
           <p>Warm, dreamy lofi vibes for calm evenings, reading and winding down.</p>
@@ -169,7 +194,7 @@
       </div>
 
       <div class="card">
-        <img src="study-focus-piano.png" alt="Study Focus Piano cover">
+        <img src="study-focus-piano.PNG" alt="Study Focus Piano cover">
         <div class="card-content">
           <h3>Study Focus Piano</h3>
           <p>Gentle study music to help you concentrate, think clearly and stay productive.</p>
@@ -191,9 +216,9 @@
   <section class="section">
     <h2>Gallery</h2>
     <div class="gallery">
-      <img src="studio1.png" alt="RiverDream studio">
-      <img src="lofi-heaven.png" alt="Lofi Heaven artwork">
-      <img src="study-focus-piano.png" alt="Study Focus Piano artwork">
+      <img src="studio 1.png" alt="RiverDream studio">
+      <img src="lofi-heaven.PNG" alt="Lofi Heaven artwork">
+      <img src="study-focus-piano.PNG" alt="Study Focus Piano artwork">
       <img src="soft-piano-melodies.jpg" alt="Soft Piano Melodies artwork">
     </div>
   </section>
