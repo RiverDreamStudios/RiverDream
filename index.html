@@ -4,9 +4,203 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RiverDream</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0d12;
+      color: #f4efe8;
+      line-height: 1.6;
+    }
+    a {
+      color: #ffd27a;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      position: relative;
+      min-height: 70vh;
+      background: linear-gradient(rgba(15,13,18,0.45), rgba(15,13,18,0.85)),
+                  url('studio1.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero-content {
+      max-width: 800px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ffe3a3;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+    }
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: #c9962b;
+      color: white;
+      font-weight: bold;
+    }
+    .btn.secondary {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      color: #ffe3a3;
+    }
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .socials a {
+      background: #1b1720;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid #2a2330;
+      color: #f4efe8;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .card {
+      background: #18141c;
+      border: 1px solid #2b2432;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .card img {
+      width: 100%;
+      display: block;
+      height: 280px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 18px;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #ffe3a3;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+      border: 1px solid #2b2432;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px 50px;
+      color: #cfc5b7;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 20px;">
-  <h1>Welcome to RiverDream</h1>
-  <p>I create calm and relaxing music to help you unwind, breathe, and stay focused.</p>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>RiverDream</h1>
+      <p>Calm, relaxing and focus music for sleep, study, meditation and peaceful moments.</p>
+      <div class="button-row">
+        <a class="btn" href="https://www.youtube.com/@RiverDreamStudios" target="_blank">Listen on YouTube</a>
+        <a class="btn secondary" href="https://open.spotify.com/artist/3jy9Ewn4MpHkls0MCIWjcv?si=2ZagFPx9QV2ucKWDKxTxKQ" target="_blank">Listen on Spotify</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Follow RiverDream</h2>
+    <p>Stay connected for new releases, relaxing playlists and updates.</p>
+
+    <div class="socials">
+      <a href="https://www.youtube.com/@RiverDreamStudios" target="_blank">YouTube</a>
+      <a href="https://open.spotify.com/artist/3jy9Ewn4MpHkls0MCIWjcv?si=2ZagFPx9QV2ucKWDKxTxKQ" target="_blank">Spotify Artist</a>
+      <a href="https://www.tiktok.com/@riverdreamstudios" target="_blank">TikTok</a>
+      <a href="https://www.facebook.com/profile.php?id=61580987531339#" target="_blank">Facebook</a>
+      <a href="https://www-fallback.instagram.com/riverdreamstudios/" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Featured Music</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="lofi-heaven.png" alt="Lofi Heaven cover">
+        <div class="card-content">
+          <h3>Lofi Heaven</h3>
+          <p>Warm, dreamy lofi vibes for calm evenings, reading and winding down.</p>
+          <a href="https://open.spotify.com/playlist/6txXKF2CGomURJB1tInnhC?si=64f067a2628f4ebb" target="_blank">Open playlist</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="study-focus-piano.png" alt="Study Focus Piano cover">
+        <div class="card-content">
+          <h3>Study Focus Piano</h3>
+          <p>Gentle study music to help you concentrate, think clearly and stay productive.</p>
+          <a href="https://open.spotify.com/playlist/5Xdx93k0Q76mUYNdNT7kSd?si=b793011642b940e7" target="_blank">Open playlist</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="soft-piano-melodies.jpg" alt="Soft Piano Melodies cover">
+        <div class="card-content">
+          <h3>Soft Piano Melodies</h3>
+          <p>Soft piano soundscapes for relaxation, peace, reflection and quiet moments.</p>
+          <a href="https://open.spotify.com/playlist/5gVh8fJGbs1mbCOB5nCchG?si=c83a1aa2a04e41ef" target="_blank">Open playlist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="studio1.png" alt="RiverDream studio">
+      <img src="lofi-heaven.png" alt="Lofi Heaven artwork">
+      <img src="study-focus-piano.png" alt="Study Focus Piano artwork">
+      <img src="soft-piano-melodies.jpg" alt="Soft Piano Melodies artwork">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 RiverDream. All rights reserved.
+  </footer>
+
 </body>
 </html>
